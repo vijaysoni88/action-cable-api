@@ -1,0 +1,14 @@
+
+<h1>Action Cable Example</h1>
+
+<div id='messages'></div>
+
+<%= form_for(:calculator, url: page_show_path(), remote: true, method: 'get') do |f| %>
+  <p>
+    <%= f.label :title %><br>
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.submit 'submit messages', :class => 'remove-text' %>
+  </p>
+<%end%>
